@@ -1,4 +1,4 @@
-class Helpers
+class Helpers < Sinatra::Base
 
   def self.current_user(session)
    User.find_by(id: session[:user_id])
